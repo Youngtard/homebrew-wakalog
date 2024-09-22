@@ -5,20 +5,20 @@
 class Wakalog < Formula
   desc ""
   homepage "https://github.com/Youngtard/homebrew-wakalog"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.3/wakalogs_Darwin_x86_64.tar.gz"
-      sha256 "2b7a668f976878f70540e197b16fa2f66c7cee19a5fd44b25b1e066ca3b892e2"
+      url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Darwin_x86_64.tar.gz"
+      sha256 "edf3de567595fc07c0d179768097bbf6ca0cbdd168be0b6ddf6874b5515413c8"
 
       def install
         bin.install "wakalogs"
       end
     end
     on_arm do
-      url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.3/wakalogs_Darwin_arm64.tar.gz"
-      sha256 "b252139988db81f3c199194501938c4fd4435877aa3c19da5657afbcd4ebcb68"
+      url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Darwin_arm64.tar.gz"
+      sha256 "5b0226ffdb3f8688fbce359f5fdd065c00cb3735ee217e91cf0720ed84e8bb09"
 
       def install
         bin.install "wakalogs"
@@ -29,8 +29,8 @@ class Wakalog < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.3/wakalogs_Linux_x86_64.tar.gz"
-        sha256 "fcd193f4db2df82c49522759e093988c73c8ac348166657011f54dd564135752"
+        url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Linux_x86_64.tar.gz"
+        sha256 "fdb6404ddf53b0b59f722e517209e3be5166e099e4f55cddbfe1ea32d082f1c8"
 
         def install
           bin.install "wakalogs"
@@ -39,8 +39,8 @@ class Wakalog < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.3/wakalogs_Linux_arm64.tar.gz"
-        sha256 "76e0fe065f83afa0549bca1cce6c792e346e949077efdce0c3a8b814cb0060b6"
+        url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Linux_arm64.tar.gz"
+        sha256 "32f7c3d0fdfdfb88ef36bdc572b66fc3116aa64ad0893dbfaab5be76cff7b58c"
 
         def install
           bin.install "wakalogs"
