@@ -5,23 +5,23 @@
 class Wakalog < Formula
   desc ""
   homepage "https://github.com/Youngtard/homebrew-wakalog"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Darwin_x86_64.tar.gz"
-      sha256 "edf3de567595fc07c0d179768097bbf6ca0cbdd168be0b6ddf6874b5515413c8"
+      url "https://github.com/Youngtard/wakalog/releases/download/v0.1.5/wakalog_Darwin_x86_64.tar.gz"
+      sha256 "b8c16f775117b9b09901eb9cf7c0740fc306d6619866fd3c08057559e733f99a"
 
       def install
-        bin.install "wakalogs"
+        bin.install "wakalog"
       end
     end
     on_arm do
-      url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Darwin_arm64.tar.gz"
-      sha256 "5b0226ffdb3f8688fbce359f5fdd065c00cb3735ee217e91cf0720ed84e8bb09"
+      url "https://github.com/Youngtard/wakalog/releases/download/v0.1.5/wakalog_Darwin_arm64.tar.gz"
+      sha256 "afbe7f8079a9ffeb42e76dd161c613aeb3a93c000ac856eba0b4592e79a2b98f"
 
       def install
-        bin.install "wakalogs"
+        bin.install "wakalog"
       end
     end
   end
@@ -29,21 +29,21 @@ class Wakalog < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Linux_x86_64.tar.gz"
-        sha256 "fdb6404ddf53b0b59f722e517209e3be5166e099e4f55cddbfe1ea32d082f1c8"
+        url "https://github.com/Youngtard/wakalog/releases/download/v0.1.5/wakalog_Linux_x86_64.tar.gz"
+        sha256 "0bd43bcd9c0f17648077a1f70deba6d57db03989d36e2fca106a2bcbccdf9b90"
 
         def install
-          bin.install "wakalogs"
+          bin.install "wakalog"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Youngtard/wakalogs/releases/download/v0.1.4/wakalogs_Linux_arm64.tar.gz"
-        sha256 "32f7c3d0fdfdfb88ef36bdc572b66fc3116aa64ad0893dbfaab5be76cff7b58c"
+        url "https://github.com/Youngtard/wakalog/releases/download/v0.1.5/wakalog_Linux_arm64.tar.gz"
+        sha256 "9f37dd3a62c763b535443062facc877226747fb8c10060b6b428f2bcd5f38bfe"
 
         def install
-          bin.install "wakalogs"
+          bin.install "wakalog"
         end
       end
     end
